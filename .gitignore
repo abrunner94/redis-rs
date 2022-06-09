@@ -3,3 +3,4 @@ lib
 target
 .rust
 Cargo.lock
+.idea
