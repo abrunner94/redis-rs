@@ -544,7 +544,7 @@ pub type RedisResult<T> = Result<T, RedisError>;
 pub type RedisFuture<'a, T> = futures_util::future::BoxFuture<'a, RedisResult<T>>;
 
 /// An info dictionary type.
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug)]
 pub struct InfoDict {
     pub map: HashMap<String, Value>,
 }
